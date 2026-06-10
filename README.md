@@ -1,17 +1,12 @@
-# nbp_ui
+# NBP App UI Clone
 
-A new Flutter project.
+A user interface clone of the National Bank of Pakistan (NBP) mobile application, built using Flutter. This project focuses on recreating the complex home screen layout using core Flutter widgets.
 
-## Getting Started
+## Features
+* Built the Home Screen UI with scrollable areas.
+* Used Stack and Positioned widgets to smoothly handle overlapping cards.
+* Created custom, reusable widgets to keep the code clean and easy to maintain.
 
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Tech Stack
+* **Framework:** Flutter
+* **Language:** Dart
