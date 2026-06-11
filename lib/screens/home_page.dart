@@ -214,6 +214,52 @@ class HomePage extends StatelessWidget {
           const AccountInfoCard(),
         ],
       ),
+      bottomNavigationBar: Container(
+        height: 55,
+        color: const Color.fromARGB(255, 226, 225, 225),
+        child: SingleChildScrollView(
+          scrollDirection: Axis.horizontal,
+          physics: const BouncingScrollPhysics(),
+          child: Row(
+            // crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              _buildBottomNavItem(Icons.receipt_long, 'E-Receipt'),
+              _buildBottomNavItem(
+                Icons.monetization_on,
+                'Advance Salary\nLoan',
+              ),
+              _buildBottomNavItem(Icons.qr_code, 'QR Pay'),
+              _buildBottomNavItem(Icons.local_offer, 'Golootlo'),
+              _buildBottomNavItem(Icons.fingerprint, 'Biometric\nVerification'),
+              _buildBottomNavItem(Icons.workspace_premium, 'Certificates'),
+              _buildBottomNavItem(Icons.feedback, 'Complaints'),
+              _buildBottomNavItem(Icons.account_balance, 'Raast ID Management'),
+              _buildBottomNavItem(Icons.paypal, 'PayPro'),
+              _buildBottomNavItem(Icons.color_lens, 'Themes'),
+            ],
+          ),
+        ),
+      ),
+    );
+  }
+
+  _buildBottomNavItem(IconData iconData, String title) {
+    return Container(
+      width: 85,
+      padding: const EdgeInsetsGeometry.symmetric(horizontal: 4, vertical: 3),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          SizedBox(height: 3),
+          Icon(iconData, size: 18),
+          const SizedBox(height: 5),
+          Text(
+            title,
+            style: TextStyle(fontSize: 10, height: 1.1),
+            textAlign: TextAlign.center,
+          ),
+        ],
+      ),
     );
   }
 }
