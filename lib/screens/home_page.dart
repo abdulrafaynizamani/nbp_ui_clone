@@ -4,6 +4,8 @@ import 'package:nbp_ui/utils/widgets/grid_button.dart';
 import '../utils/widgets/account_info_card.dart';
 
 class HomePage extends StatelessWidget {
+  const HomePage({super.key});
+
   // const MyHomePage({super.key, required this.title});
   @override
   Widget build(BuildContext context) {
@@ -162,6 +164,45 @@ class HomePage extends StatelessWidget {
                             Icon(Icons.keyboard_arrow_down, size: 30),
                           ],
                         ),
+                        SizedBox(height: 10),
+                        SizedBox(
+                          width: double.infinity,
+                          height: 120,
+                          child: ListView(
+                            padding: const EdgeInsets.symmetric(horizontal: 16),
+                            physics: const BouncingScrollPhysics(),
+                            scrollDirection: Axis.horizontal,
+                            children: [
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.network(
+                                  'https://www.nbp.com.pk/slider/Web-Banner-WhatsApp.jpg',
+                                  fit: BoxFit.cover,
+                                  width: 280,
+                                ),
+                              ),
+                              const SizedBox(width: 12),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.network(
+                                  'https://www.nbp.com.pk/slider/Raast-Web-Banner.jpg',
+                                  fit: BoxFit.cover,
+                                  width: 280,
+                                ),
+                              ),
+                              const SizedBox(width: 12),
+                              ClipRRect(
+                                borderRadius: BorderRadius.circular(10),
+                                child: Image.network(
+                                  'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSCSICX7OzfCm-K0cHEyO5psjLn4za2mzIyXw&s',
+                                  fit: BoxFit.cover,
+                                  width: 280,
+                                ),
+                              ),
+                              // const SizedBox(width: 12),
+                            ],
+                          ),
+                        ),
                       ],
                     ),
                   ),
@@ -169,6 +210,7 @@ class HomePage extends StatelessWidget {
               ),
             ],
           ),
+          // Layer - 2: Account Info Card
           const AccountInfoCard(),
         ],
       ),
