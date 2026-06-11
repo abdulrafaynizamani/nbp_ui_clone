@@ -10,3 +10,9 @@ A user interface clone of the National Bank of Pakistan (NBP) mobile application
 ## Tech Stack
 * **Framework:** Flutter
 * **Language:** Dart
+
+* ## Screenshots
+* <img src="screenshots\Screenshot_1781158052.png" width=300>
+* <img src="screenshots\Screenshot_1781159443.png" width=300>
+* <img src="screenshots\Screenshot_1781159451.png" width=300>
+* <img src="screenshots\Screenshot_1781159459.png" width=300>
